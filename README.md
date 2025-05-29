@@ -23,3 +23,15 @@ The following provides a step-by-step instruction to reproduce ourwork.
 4. To run specific experiments, different experimental setups are wrapped as separate functions in training.py. You can manually call a specific function to execute the corresponding experiment. Please refer to the comments in the script for guidance.
 5. To reproduce the theoretical information breakdown analysis (e.g., Fig. 4c), use `analysis.py`. 
 
+# Citation
+
+[Zhu, Zhichao, et al. "Stochastic Forward-Forward Learning through Representational Dimensionality Compression." arXiv preprint arXiv:2505.16649 (2025).](https://arxiv.org/abs/2505.16649)
+
+   ```
+@article{zhu2025stochastic,
+  title={Stochastic Forward-Forward Learning through Representational Dimensionality Compression},
+  author={Zhu, Zhichao and Qi, Yang and Ma, Hengyuan and Lu, Wenlian and Feng, Jianfeng},
+  journal={arXiv preprint arXiv:2505.16649},
+  year={2025}
+}
+   ```
