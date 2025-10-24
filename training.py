@@ -20,7 +20,7 @@ def main(args):
 
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -34,7 +34,7 @@ def main(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(1, 3):
-            net_config['conv_config'][j]['projecting_dim'] = 200 - i * 50
+            net_config['conv_config'][j]['projecting_dim'] = 200 - j * 50
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -50,7 +50,7 @@ def main(args):
     
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -71,7 +71,7 @@ def diversity_only_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -85,7 +85,7 @@ def diversity_only_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(1, 3):
-            net_config['conv_config'][j]['projecting_dim'] = 200 - i * 50
+            net_config['conv_config'][j]['projecting_dim'] = 200 - j * 50
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -101,7 +101,7 @@ def diversity_only_training(args):
     
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -123,7 +123,7 @@ def supervised_sampling_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -137,7 +137,7 @@ def supervised_sampling_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(1, 3):
-            net_config['conv_config'][j]['projecting_dim'] = 200 - i * 50
+            net_config['conv_config'][j]['projecting_dim'] = 200 - j * 50
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -153,7 +153,7 @@ def supervised_sampling_training(args):
     
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -174,7 +174,7 @@ def supervised_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -188,7 +188,7 @@ def supervised_training(args):
         net_config['conv_config'][i]['conv_type'] = 'depthwise'
     for i in range(trials):
         for j in range(1, 3):
-            net_config['conv_config'][j]['projecting_dim'] = 200 - i * 50
+            net_config['conv_config'][j]['projecting_dim'] = 200 - j * 50
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
@@ -204,7 +204,7 @@ def supervised_training(args):
     
     for i in range(trials):
         for j in range(3):
-            net_config['conv_config'][j]['projecting_dim'] = 30 - i * 10
+            net_config['conv_config'][j]['projecting_dim'] = 30 - j * 10
         args.MODEL = net_config
         args.MODEL['conv_config'][-1]['is_last'] = True
         args.AUXILIARY_CONFIG = copy.deepcopy(net_config)
